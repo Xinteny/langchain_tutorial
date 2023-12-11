@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from langchain.llms import OpenAI
+from langchain.llms.openai import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
 import streamlit as st
@@ -24,7 +24,7 @@ book_recommendation_template = PromptTemplate(
     '''
 )
 
-llm = OpenAI(temperature=0.9, model_name="gpt-3.5-turbo") 
+llm = OpenAI(temperature=0.9) 
 language_chain = LLMChain(llm=llm, prompt=language_template, verbose=True, output_key='programming_language')
 book_recommendation_chain = LLMChain(llm=llm, prompt=book_recommendation_template, verbose=True, output_key='book_name')
 

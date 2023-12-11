@@ -1,0 +1,10 @@
+Weather Report for Paris
+
+Date: Sunday
+Location: Paris, France
+
+Temperature: 39°F
+Precipitation: 5%
+Humidity: 64%
+Wind Speed: 15 mph
+Weather Condition: Cloudy
